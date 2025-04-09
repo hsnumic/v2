@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>推理研究社</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">推理研究社</div>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <nav class="mobile-menu">
+    <a href="index.html">首頁</a>
+    <a href="club-introduction.html">社團介紹</a>
+    <a href="members-introduction">幹部介紹</a>
+    <a href="daily-question.html">每日一題</a>
+    <a href="login.html">登入/註冊</a>
+    <a href="teaching.html">教學內容</a>
+    <a href="upload.html">檔案上傳</a>
+    <a href="account.html">帳號管理</a>
+  </nav>
+
+  <main>
+    <br>
+    <div class="container">
+        <h1>附中推理研究社 創社說明</h1>
+        <br>
+        <div class="letter">
+            <p><strong>你，已受邀加入———附中推理研究社</strong></p>
+            <p>我們是一群熱愛推理、破解懸案與謎題的附中學生！</p>
+            <p>這是一個輕鬆又刺激、充滿驚喜與智慧較量的社團。</p>
+            <p>在這裡，你將挑戰燒腦的解謎遊戲，學習密碼學、犯罪心理學等專業知識，深入探索推理的世界。</p>
+            <p>但，若你還沒準備好足夠的膽量與好奇心———。</p>
+            <p><strong>千萬別輕易踏入附中推理研究社</strong></p>
+            <br>
+            <p><strong>———誠摯邀請，附中推研</strong></p>
+        </div>
+        <br>
+        <h2>為什麼加入推理研究社?</h2>
+        <ul>
+            <li>自由發揮，打造屬於你的推理社團</li>
+            <li>有趣又輕鬆，適合高二課業壓力大的學生</li>
+            <li>強大師資，包含密室逃脫創辦人、Google 遊戲設計師等</li>
+            <li>可選擇參與方式，輕鬆加入或擔任幹部</li>
+            <li>結交熱血、有趣的推理夥伴</li>
+        </ul>
+        <h2>推理研究社的活動</h2>
+        <h3>🕵️ 教學課</h3>
+        <p>推理小說導讀、電影分析、密碼學入門</p>
+        <h3>🎲 體驗課</h3>
+        <p>狼人殺、解謎桌遊、密室逃脫、RPG 剧本杀</p>
+        <h3>🔎 偵探養成術</h3>
+        <p>觀察力訓練、邏輯推理、犯罪心理學、鑑識科學</p>
+        <h3>📖 創作與實作</h3>
+        <p>撰寫推理小說、設計謎題、製作密室逃脫</p>
+        <h2>發起人</h2>
+        <p>我是附中一年級 1642 班的 <strong>項舒芸</strong>，因熱愛推理與解謎，決定創建這個社團，希望集結推理愛好者，共同打造屬於我們的推理世界！</p>
+        <h2>加入我們吧！</h2>
+        <div class="contact">
+            <p>📩 IG: <a href="https://www.instagram.com/audrey.y.hsiang" target="_blank">@audrey.y.hsiang</a></p>
+            <p>📩 社團 IG: <a href="https://www.instagram.com/hsnu_mic" target="_blank">@hsnu_mic</a></p>
+            <p>🎯 目標：招募 25 人完成創社！</p>
+        </div>
+        <button class="btn" onclick="location.href='members-introduction.html'">查看幹部介紹</button>
+        <button class="btn" onclick="location.href='index.html'">返回主頁</button>
+        <br>
+    </div>
+  </main>
+
+  <br></br>
+  <br></br>
+
+  <footer>
+    <a href="index.html">首頁</a>
+    <a href="club-introduction.html">社團介紹</a>
+    <a href="daily-question.html">每日一題</a>
+    <a href="login.html">登入</a>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

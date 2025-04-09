@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>推理研究社</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">推理研究社</div>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <nav class="mobile-menu">
+    <a href="index.html">首頁</a>
+    <a href="club-introduction.html">社團介紹</a>
+    <a href="members-introduction">幹部介紹</a>
+    <a href="daily-question.html">每日一題</a>
+    <a href="login.html">登入/註冊</a>
+    <a href="teaching.html">教學內容</a>
+    <a href="upload.html">檔案上傳</a>
+    <a href="account.html">帳號管理</a>
+  </nav>
+
+  <main>
+    <h1>附中推理研究社 邀請函</h1>
+    <div class="letter">
+      <p><strong>你，已受邀加入———附中推理研究社</strong></p>
+      <p>我們是一群熱愛推理、破解懸案與謎題的附中學生！</p>
+      <p>這是一個輕鬆又刺激、充滿驚喜與智慧較量的社團。</p>
+      <p>在這裡，你將挑戰燒腦的解謎遊戲，學習密碼學、犯罪心理學等專業知識，深入探索推理的世界。</p>
+      <p>但，若你還沒準備好足夠的膽量與好奇心———。</p>
+      <p><strong>千萬別輕易踏入附中推理研究社</strong></p>
+      <br>
+      <p><strong>———誠摯邀請，附中推研</strong></p>
+    </div>
+    <button class="btn" onclick="location.href='club-introduction.html'">查看社團介紹</button>
+  </main>
+
+  <br></br>
+  <br></br>
+
+  <footer>
+    <a href="index.html">首頁</a>
+    <a href="club-introduction.html">社團介紹</a>
+    <a href="daily-question.html">每日一題</a>
+    <a href="login.html">登入</a>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

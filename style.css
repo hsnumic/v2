@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 60px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 18px;
+  }
+  
+  .menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: #333;
+  }
+  
+  .mobile-menu.active {
+    display: flex;
+  }
+  
+  .mobile-menu a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    background: #c0392b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.letter {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-family: 'Courier New', monospace;
+}
+h1, h2, h3 {
+    color: #444;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    background: #e3e3e3;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+}
+.contact {
+    margin-top: 20px;
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+.contact p {
+    margin: 5px 0;
+}
+img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    color: #fff;
+    background: #444;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background: #666;
+}
+
+input, select {
+  height: 30px;
+  width: 200px;
+}

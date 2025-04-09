@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>檔案上傳 - 推理研究社</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">推理研究社</div>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <nav class="mobile-menu">
+    <a href="index.html">首頁</a>
+    <a href="club-introduction.html">社團介紹</a>
+    <a href="members-introduction">幹部介紹</a>
+    <a href="daily-question.html">每日一題</a>
+    <a href="login.html">登入/註冊</a>
+    <a href="teaching.html">教學內容</a>
+    <a href="upload.html">檔案上傳</a>
+    <a href="account.html">帳號管理</a>
+  </nav>
+
+  <main>
+    <h1>檔案上傳</h1>
+    <input type="file"><br><br>
+    <button class="btn">上傳</button>
+  </main>
+
+  <footer>
+    <a href="index.html">首頁</a>
+    <a href="club-introduction.html">社團介紹</a>
+    <a href="daily-question.html">每日一題</a>
+    <a href="login.html">登入</a>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').onclick = () => {
+      document.querySelector('.mobile-menu').classList.toggle('active');
+    };
+  </script>
+</body>
+</html>
