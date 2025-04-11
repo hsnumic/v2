@@ -46,10 +46,6 @@ body {
     }
     .content {
       overflow: hidden;
-      max-height: 0;
-      transition: max-height 0.5s ease, padding 0.5s ease;
-    }
-    .content.open {
-      padding-top: 10px;
-      max-height: 500px; /* 可根據需要調整 */
+      height: 0;
+      transition: height 0.4s ease;
     }
