@@ -29,6 +29,7 @@
 
   <div class="timeline-item" data-number="1">
     <div class="title">犯罪心理與犯罪學</div>
+    <p>探索犯罪者心理動機、行為模式與犯罪學理論，深入了解犯罪心理學的核心觀點，建立專業的犯罪學基礎知識。</p>
     <button class="toggle-btn btn">展開/收起</button>
     <div class="content">
       <ul>
@@ -42,6 +43,7 @@
 
   <div class="timeline-item" data-number="2">
     <div class="title">推理作品與分析</div>
+    <p>分析經典推理小說、影視作品中的邏輯推演與敘事技巧，學習如何拆解線索，感受推理故事的魅力與邏輯之美。</p>
     <button class="toggle-btn btn">展開/收起</button>
     <div class="content">
       <ul>
@@ -55,6 +57,7 @@
 
   <div class="timeline-item" data-number="3">
     <div class="title">解謎遊戲與實務操作</div>
+    <p>實戰體驗各類型解謎遊戲與密室逃脫，培養邏輯推理、團隊合作與實務應用能力，理論與實操相結合。</p>
     <button class="toggle-btn btn">展開/收起</button>
     <div class="content">
       <ul>
@@ -68,6 +71,7 @@
 
   <div class="timeline-item" data-number="4">
     <div class="title">其他類</div>
+    <p>涵蓋推理領域周邊知識，如科學鑑識、歷史懸案與跨學科研究，拓展視野，提升綜合推理素養。</p>
     <button class="toggle-btn btn">展開/收起</button>
     <div class="content">
       <ul>
@@ -82,11 +86,22 @@
 
 <script>
   const buttons = document.querySelectorAll('.toggle-btn');
+
   buttons.forEach(button => {
     button.addEventListener('click', () => {
       const content = button.nextElementSibling;
-      content.classList.toggle('open');
+
+      if (content.style.height && content.style.height !== "0px") {
+        content.style.height = '0';
+      } else {
+        content.style.height = content.scrollHeight + 'px';
+      }
     });
+  });
+
+  // 初始化時收起全部
+  document.querySelectorAll('.content').forEach(content => {
+    content.style.height = '0';
   });
 </script>
   </main>
