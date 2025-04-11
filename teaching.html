@@ -26,26 +26,69 @@
 
   <main>
     <div class="timeline">
-      <div class="timeline-item" data-number="1">
-        <h3>犯罪心理與犯罪學</h3>
-        <p>探索犯罪者心理動機、行為模式與犯罪學理論，深入了解犯罪心理學的核心觀點，建立專業的犯罪學基礎知識。</p>
-      </div>
 
-      <div class="timeline-item" data-number="2">
-        <h3>推理作品與分析</h3>
-        <p>分析經典推理小說、影視作品中的邏輯推演與敘事技巧，學習如何拆解線索，感受推理故事的魅力與邏輯之美。</p>
-      </div>
-
-      <div class="timeline-item" data-number="3">
-        <h3>解謎遊戲與實務操作</h3>
-        <p>實戰體驗各類型解謎遊戲與密室逃脫，培養邏輯推理、團隊合作與實務應用能力，理論與實操相結合。</p>
-      </div>
-
-      <div class="timeline-item" data-number="4">
-        <h3>其他類</h3>
-        <p>涵蓋推理領域周邊知識，如科學鑑識、歷史懸案與跨學科研究，拓展視野，提升綜合推理素養。</p>
-      </div>
+  <div class="timeline-item" data-number="1">
+    <div class="title">犯罪心理與犯罪學</div>
+    <button class="toggle-btn">展開/收起</button>
+    <div class="content">
+      <ul>
+        <li>犯罪心理學入門</li>
+        <li>心理側寫與行為分析</li>
+        <li>犯罪動機與模式</li>
+        <li>知名犯罪案例研究</li>
+      </ul>
     </div>
+  </div>
+
+  <div class="timeline-item" data-number="2">
+    <div class="title">推理作品與分析</div>
+    <button class="toggle-btn">展開/收起</button>
+    <div class="content">
+      <ul>
+        <li>經典推理小說解析</li>
+        <li>影視推理作品賞析</li>
+        <li>推理劇本寫作技巧</li>
+        <li>推理敘事與邏輯結構</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item" data-number="3">
+    <div class="title">解謎遊戲與實務操作</div>
+    <button class="toggle-btn">展開/收起</button>
+    <div class="content">
+      <ul>
+        <li>密室逃脫設計原理</li>
+        <li>線索設計與邏輯推演</li>
+        <li>解謎遊戲實操</li>
+        <li>團隊合作與策略應用</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item" data-number="4">
+    <div class="title">其他類</div>
+    <button class="toggle-btn">展開/收起</button>
+    <div class="content">
+      <ul>
+        <li>邏輯訓練與思考遊戲</li>
+        <li>心理學趣味實驗</li>
+        <li>推理相關趣味活動</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.toggle-btn');
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      content.classList.toggle('open');
+    });
+  });
+</script>
   </main>
 
   <footer>
