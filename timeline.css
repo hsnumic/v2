@@ -3,18 +3,18 @@ body {
       background-color: #f9f9f9;
       padding: 0;
       margin: 0;
-    }
+}
 
-    .timeline {
+.timeline {
       position: relative;
       margin-left: 0;
       padding: 20px 0;
       width: 90%;
       max-width: 600px;
-    }
+}
 
-    /* 垂直中線 */
-    .timeline::before {
+/* 垂直中線 */
+.timeline::before {
       content: '';
       position: absolute;
       top: 0;
@@ -22,16 +22,16 @@ body {
       left: 40px;
       width: 2px;
       background-color: #3498db;
-    }
+}
 
-    .timeline-item {
+.timeline-item {
       position: relative;
       margin-bottom: 40px;
       padding-left: 70px;
-    }
+}
 
     /* 圓圈數字 */
-    .timeline-item::before {
+.timeline-item::before {
       content: attr(data-number);
       position: absolute;
       left: 20px;
@@ -45,40 +45,40 @@ body {
       line-height: 36px;
       font-weight: bold;
       font-size: 18px;
-    }
+}
 
     /* 內容區 */
-    .timeline-item h3 {
+.timeline-item h3 {
       margin: 0;
       font-size: 18px;
       color: #333;
-    }
+}
 
-    .timeline-item p {
+.timeline-item p {
       margin: 5px 0 0;
       color: #555;
-    }
+}
 
     /* 手機優化 */
-    @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
       .timeline::before {
-        left: 20px;
-      }
+      left: 20px;
+}
 
-      .timeline-item {
-        padding-left: 50px;
-      }
+.timeline-item {
+      padding-left: 50px;
+}
 
-      .timeline-item::before {
-        left: 0;
-      }
-    }
+.timeline-item::before {
+      left: 0;
+}
+
 .title {
       font-size: 1.2em;
       margin-bottom: 10px;
-    }
-    .content {
+}
+.content {
       overflow: hidden;
       max-height: 0;
       transition: max-height 0.5s ease, padding 0.5s ease;
-    }
+}
