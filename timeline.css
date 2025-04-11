@@ -6,7 +6,7 @@ body {
 
     .timeline {
       position: relative;
-      margin: 0 auto;
+      margin-left: 10%;
       padding: 20px 0;
       width: 90%;
       max-width: 600px;
