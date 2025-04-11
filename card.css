@@ -1,6 +1,6 @@
 .card-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap; /* 關鍵：允許換行 */
   justify-content: center;
   gap: 10px;
   margin-top: 40px;
