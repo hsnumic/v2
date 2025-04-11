@@ -6,6 +6,7 @@
   <title>推理研究社</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="card.css" />
+  <link rel="stylesheet" href="announcement.css" />
 </head>
 <body>
   <header>
@@ -107,6 +108,30 @@
     </a>
   </div>
 
+  <h1>🕵️‍♀️ 公佈欄｜推理研究社</h1>
+  <section id="bulletin-board" style="margin: 2rem;">
+  <div class="announcement">
+    <button class="accordion">📢【社課公告】下週五進行密室推理實戰！</button>
+    <div class="panel">
+      <p>下週五（4/18）社課將進行首次「密室推理實戰」模擬活動，請社員分組準備筆記本與手電筒，地點為三樓舊視聽教室。敬請準時參加，晚到者需解開一道額外謎題才能進場！</p>
+    </div>
+  </div>
+
+  <div class="announcement">
+    <button class="accordion">🧩【推理挑戰】四月破案王徵集中！</button>
+    <div class="panel">
+      <p>每月一題挑戰來啦！本月的推理題將於 4/10 公布在 IG 與網站，歡迎所有社內外成員投稿解答，優勝者將獲得社團限量徽章與「偵探證書」！</p>
+    </div>
+  </div>
+
+  <div class="announcement">
+    <button class="accordion">🔍【新社員招募】來成為我們的偵探夥伴！</button>
+    <div class="panel">
+      <p>你喜歡解謎、推理、犯罪學或福爾摩斯？推理研究社熱情招募中！歡迎對案件分析、故事創作、遊戲設計有興趣的同學一起加入我們！報名方式請見「加入我們」頁面。</p>
+    </div>
+  </div>
+</section>
+    
     <div class="contact" id="contact-information">
       <h2>☎️ 聯絡我們</h2>
       <p>📩 IG: <a href="https://www.instagram.com/audrey.y.hsiang" target="_blank">@audrey.y.hsiang</a></p>
@@ -114,7 +139,7 @@
       <p>🎯 目標：招募 25 人完成創社！</p>
     </div>
   </main>
-
+  
   <br></br>
   <br></br>
 
@@ -136,6 +161,20 @@
     document.querySelector('.contact-card').addEventListener('click', function() {
       document.getElementById('contact-information').scrollIntoView({ behavior: 'smooth' });
     });
+  </script>
+  <script>
+    const acc = document.querySelectorAll(".accordion");
+  acc.forEach(button => {
+    button.addEventListener("click", function () {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
   </script>
 </body>
 </html>
