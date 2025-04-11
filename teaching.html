@@ -97,7 +97,11 @@
       } else {
         content.style.height = content.scrollHeight + 'px';
         content.style.overflow = 'visual';
-      }
+    }
+    });
+    document.querySelectorAll('.content').forEach(content => {
+        content.style.height = '0';
+        content.style.overflow = 'hidden';
     });
   });
 </script>
