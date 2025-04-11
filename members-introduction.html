@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>推理研究社</title>
+  <link rel="stylesheet" href="cadre.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -25,7 +26,81 @@
 
   <main>
     <h1>幹部介紹</h1>
-    <h3>這個小編太懶了，甚麼都沒留下!</h3>
+    <div class="cadres-container">
+
+    <div class="cadre-card">
+      <div class="cadre-name">社長</div>
+      <div class="cadre-role">最高領導人</div>
+      <div class="cadre-intro">
+        負責監督和管理整個社團的運作，引領社團成員共同成長與進步。
+      </div>
+    </div>
+
+    <div class="cadre-card">
+      <div class="cadre-name">副社長</div>
+      <div class="cadre-role">協調中樞</div>
+      <div class="cadre-intro">
+        協助社長推動各項事務，擔任社團溝通與協調的核心角色。
+      </div>
+    </div>
+
+    <div class="cadre-card">
+      <div class="cadre-name">文書長</div>
+      <div class="cadre-role">會議紀錄專員</div>
+      <div class="cadre-intro">
+        負責記錄社團各項會議內容，並妥善保存重要資料。
+      </div>
+    </div>
+
+    <div class="cadre-card">
+      <div class="cadre-name">公關長</div>
+      <div class="cadre-role">對外聯繫專員</div>
+      <div class="cadre-intro">
+        接洽校內外單位，積極爭取合作與贊助，拓展社團影響力。
+      </div>
+    </div>
+
+    <div class="cadre-card">
+      <div class="cadre-name">活動長</div>
+      <div class="cadre-role">活動策劃專家</div>
+      <div class="cadre-intro">
+        策劃並執行各項社內外活動，促進社員之間的交流與認識。
+      </div>
+    </div>
+
+    <div class="cadre-card">
+      <div class="cadre-name">總務長</div>
+      <div class="cadre-role">財務管理專員</div>
+      <div class="cadre-intro">
+        管理社團帳務，定期清點經費並公布使用狀況，確保財務透明。
+      </div>
+    </div>
+
+    <div class="cadre-card">
+      <div class="cadre-name">器材長</div>
+      <div class="cadre-role">器材管理專員</div>
+      <div class="cadre-intro">
+        定期清點與管理社團器材，並公布使用狀況，確保物資完善。
+      </div>
+    </div>
+
+    <div class="cadre-card">
+      <div class="cadre-name">資訊長</div>
+      <div class="cadre-role">社群小編</div>
+      <div class="cadre-intro">
+        維護社團粉絲專頁，發布重要資訊，擔任社團對外窗口之一。
+      </div>
+    </div>
+
+    <div class="cadre-card">
+      <div class="cadre-name">美宣長</div>
+      <div class="cadre-role">美術設計專員</div>
+      <div class="cadre-intro">
+        製作社團宣傳圖檔，管理場佈品與社辦布置，打造社團美學風格。
+      </div>
+    </div>
+
+  </div>
     <button class="btn" onclick="location.href='club-introduction.html'">查看社團介紹</button>
       <button class="btn" onclick="location.href='index.html'">返回主頁</button>
   </main>
@@ -45,6 +120,14 @@
     const mobileMenu = document.querySelector('.mobile-menu');
     menuToggle.addEventListener('click', () => {
       mobileMenu.classList.toggle('active');
+    });
+  </script>
+  <script>
+    // 點擊卡片展開介紹
+    document.querySelectorAll('.cadre-card').forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('active');
+      });
     });
   </script>
 </body>
