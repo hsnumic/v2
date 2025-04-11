@@ -53,15 +53,3 @@ body {
       padding-top: 10px;
       max-height: 500px; /* 可根據需要調整 */
     }
-    .toggle-btn {
-      background: #007bff;
-      color: white;
-      border: none;
-      padding: 8px 12px;
-      border-radius: 4px;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-    .toggle-btn:hover {
-      background: #0056b3;
-    }
