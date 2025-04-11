@@ -20,7 +20,8 @@
 
 @media screen and (max-width: 480px) {
     .card {
-      width: 40%;
+      width: 47.5%;
+      gap: 4%;
     }
 }
 
