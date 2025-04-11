@@ -1,6 +1,7 @@
 .accordion {
     background-color: #eee;
     color: #333;
+    padding: 1rem;
     cursor: pointer;
     width: 100%;
     text-align: left;
