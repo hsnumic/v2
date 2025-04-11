@@ -98,7 +98,7 @@
       </div>
     </a>
 
-    <a href="" class="card">
+    <a class="card contact-card">
       <img src="contact.jpg" alt="聯絡我們">
       <div class="card-content">
         <h3>聯絡我們</h3>
@@ -107,7 +107,7 @@
     </a>
   </div>
 
-    <div class="contact">
+    <div class="contact" id="contact-information">
       <h2>☎️ 聯絡我們</h2>
       <p>📩 IG: <a href="https://www.instagram.com/audrey.y.hsiang" target="_blank">@audrey.y.hsiang</a></p>
       <p>📩 社團 IG: <a href="https://www.instagram.com/hsnu_mic" target="_blank">@hsnu_mic</a></p>
@@ -130,6 +130,11 @@
     const mobileMenu = document.querySelector('.mobile-menu');
     menuToggle.addEventListener('click', () => {
       mobileMenu.classList.toggle('active');
+    });
+  </script>
+  <script>
+    document.querySelector('.contact-card').addEventListener('click', function() {
+      document.getElementById('contact-information').scrollIntoView({ behavior: 'smooth' });
     });
   </script>
 </body>
