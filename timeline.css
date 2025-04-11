@@ -62,20 +62,21 @@ body {
     /* 手機優化 */
 @media screen and (max-width: 480px) {
       .timeline::before {
-      left: 20px;
-}
+            left: 20px;
+      }
 
-.timeline-item {
-      padding-left: 50px;
-}
+      .timeline-item {
+            padding-left: 50px;
+      }
 
-.timeline-item::before {
-      left: 0;
-}
+      .timeline-item::before {
+            left: 0;
+      }
 
-.title {
-      font-size: 1.2em;
-      margin-bottom: 10px;
+      .title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+      }
 }
 
 .content {
